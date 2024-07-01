@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.grids {
+    display: grid;
+}
+
+.chat {
+    background-color: gray;
+    color: white;
+    display: grid;
+    grid-template-columns: 1;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    
+   
+}
+
+.chatbot {
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+</style>
+<body>
+    <section class="screen">
+        <div class="grids">
+            <div style="background-color: red ;" class="chat">1</div>
+            <div style="background-color: blue ;" class="chat">2</div>
+            <div style="background-color: brown ;" class="chat">3</div>
+            <div style="background-color: yellow ;" class="chat">4</div>
+            <div style="background-color: green ;" class="chat">5</div>
+        </div>
+        <div class="chatbot">
+            <div style="background-color: pink ;" class="chat">6</div>
+        </div>
+    </section>
+</body>
+</html>

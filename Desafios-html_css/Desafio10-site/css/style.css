@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* #3DDC84 #063d1e*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face 
+{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@media screen and (width < 600px) {
+    main
+    {
+        margin: 20px;
+    }
+}
+
+* 
+{
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+}
+
+
+html,body 
+{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f2f2ff;
+}
+
+:root 
+{
+    --cor1: #3DDC84;
+    --cor2: #282828;
+    --font: 'Bebas Neue', cursive;
+    --font-android : 'Android',cursive;
+ 
+}
+a 
+
+{
+    color: var(--cor1);
+}
+
+header 
+{
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.header__content
+{
+    
+    text-align: center;
+
+}
+
+.header__content > h1 
+{
+    font-family:var(--font);
+    font-size: 5em;
+    margin-bottom: 0px;
+
+}
+
+.header__content > p
+{
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #cccccc;
+}
+
+
+.nav__content > p
+{
+    margin: 10px;
+    text-align: center;
+ 
+}
+
+.nav__content > p > a 
+{
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    transition-duration: .4s;
+}
+
+.nav__content > p > a:hover
+{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+
+
+main 
+{
+    overflow: auto;
+    padding-bottom: 100px;
+    margin: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main p 
+{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1em;
+}
+
+.main__content > h2
+{
+    font-family: var(--font-android);
+    padding: 10px;
+}
+
+.main__content > picture > img 
+{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.main__content > picture > .pequena 
+{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+.video 
+{
+    width: 100%;
+    margin: auto;
+   
+}
+
+.video div {
+    background-color: var(--cor2);
+    margin: 0px -20px 30x -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.video div iframe {
+    position: absolute;
+    top: 5% ;
+    left: 5% ;
+    width: 90%;
+    height: 90%;
+}
+
+.aside__content > ul 
+{
+    list-style-position: inside;
+    columns: 2;
+}
+
+.aside__content 
+{
+    margin: 10px;
+}
+
+.footer__content
+{
+    position: relative;
+    background-color:var(--cor2) ;
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+
+    
+
+}
+
+.footer__content > p 
+{
+    color: #ffff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer__content > p > a 
+{
+    color: #ffff;
+    text-decoration: none;
+}
